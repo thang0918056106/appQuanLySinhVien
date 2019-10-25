@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddActivity">
+
+    <TextView
+        android:id="@+id/textviewAddTieuDe"
+        android:text="THÊM SINH VIÊN"
+        android:textSize="25sp"
+        android:layout_margin="10dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="#E0180B"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/edtaddTensv"
+        android:hint="Nhập họ tên SV"
+        android:layout_below="@id/textviewAddTieuDe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/edtaddNamSinhsv"
+        android:hint="Nhập năm sinh"
+        android:layout_below="@id/edtaddTensv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/edtDiaChiSV"
+        android:hint="Nhập địa chỉ SV"
+        android:layout_below="@id/edtaddNamSinhsv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btnAddThem"
+        android:layout_below="@id/edtDiaChiSV"
+        android:text="Thêm"
+        android:layout_marginLeft="80dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/btnAddHuy"
+        android:text="HỦY"
+        android:layout_marginRight="80dp"
+        android:layout_below="@id/edtDiaChiSV"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>
